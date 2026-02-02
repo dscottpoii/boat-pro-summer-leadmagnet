@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Pro | Spring Dewinterization Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-white border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <img src="1845.png" alt="Boat Pro Logo" class="h-24 md:h-32 mb-4 object-contain">
+            <p class="text-xs tracking-[0.2em] uppercase font-bold text-slate-500">Professional Yacht Services & Maritime Solutions</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                Your 4-Week Path to a <br><span class="text-blue-700">Flawless Spring Launch.</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+                Don't guess when it comes to your vessel's safety. Download our systematic 
+                <strong>Spring Dewinterization & Launch Guide</strong> and join our community of pro-active owners.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mb-12">
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 1-2</span>
+                    <p class="text-sm text-slate-500">Hull inspection & systems recommissioning.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 3</span>
+                    <p class="text-sm text-slate-500">Safety equipment verification & interior restoration.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 4</span>
+                    <p class="text-sm text-slate-500">Final rigging, sea trials, and launch day prep.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-slate-100">
+            <h2 class="text-2xl font-bold mb-8 text-center">Join Boat Pro & Get Your Guide</h2>
+            
+            <form id="boatProForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">First Name</label>
+                        <input type="text" name="firstName" required placeholder="First Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Last Name</label>
+                        <input type="text" name="lastName" required placeholder="Last Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                    <input type="email" name="email" required placeholder="email@address.com"
+                        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-blue-700 hover:bg-blue-800 text-white font-extrabold py-4 rounded-xl shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    SEND MY FREE GUIDE
+                </button>
+            </form>
+            
+            <div id="msg" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-center font-bold text-green-700">
+                Welcome aboard! Your dewinterization guide is on its way to your inbox.
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-slate-400 text-sm border-t border-slate-100 mt-10">
+        <p>© 2026 Boat Pro USA | Professional Yacht Delivery & Consulting</p>
+    </footer>
+
+    <script>
+        // Replace this URL with your Google Apps Script Web App URL
+        const scriptURL = '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Pro | Spring Dewinterization Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-white border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <img src="1845.png" alt="Boat Pro Logo" class="h-24 md:h-32 mb-4 object-contain">
+            <p class="text-xs tracking-[0.2em] uppercase font-bold text-slate-500">Professional Yacht Services & Maritime Solutions</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                Your 4-Week Path to a <br><span class="text-blue-700">Flawless Spring Launch.</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+                Don't guess when it comes to your vessel's safety. Download our systematic 
+                <strong>Spring Dewinterization & Launch Guide</strong> and join our community of pro-active owners.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mb-12">
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 1-2</span>
+                    <p class="text-sm text-slate-500">Hull inspection & systems recommissioning.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 3</span>
+                    <p class="text-sm text-slate-500">Safety equipment verification & interior restoration.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 4</span>
+                    <p class="text-sm text-slate-500">Final rigging, sea trials, and launch day prep.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-slate-100">
+            <h2 class="text-2xl font-bold mb-8 text-center">Join Boat Pro & Get Your Guide</h2>
+            
+            <form id="boatProForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">First Name</label>
+                        <input type="text" name="firstName" required placeholder="First Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Last Name</label>
+                        <input type="text" name="lastName" required placeholder="Last Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                    <input type="email" name="email" required placeholder="email@address.com"
+                        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-blue-700 hover:bg-blue-800 text-white font-extrabold py-4 rounded-xl shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    SEND MY FREE GUIDE
+                </button>
+            </form>
+            
+            <div id="msg" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-center font-bold text-green-700">
+                Welcome aboard! Your dewinterization guide is on its way to your inbox.
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-slate-400 text-sm border-t border-slate-100 mt-10">
+        <p>© 2026 Boat Pro USA | Professional Yacht Delivery & Consulting</p>
+    </footer>
+
+    <script>
+        // Replace this URL with your Google Apps Script Web App URL
+        const scriptURL = '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Pro | Spring Dewinterization Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-white border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <img src="1845.png" alt="Boat Pro Logo" class="h-24 md:h-32 mb-4 object-contain">
+            <p class="text-xs tracking-[0.2em] uppercase font-bold text-slate-500">Professional Yacht Services & Maritime Solutions</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                Your 4-Week Path to a <br><span class="text-blue-700">Flawless Spring Launch.</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+                Don't guess when it comes to your vessel's safety. Download our systematic 
+                <strong>Spring Dewinterization & Launch Guide</strong> and join our community of pro-active owners.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mb-12">
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 1-2</span>
+                    <p class="text-sm text-slate-500">Hull inspection & systems recommissioning.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 3</span>
+                    <p class="text-sm text-slate-500">Safety equipment verification & interior restoration.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <span class="text-blue-700 font-bold block mb-1">Week 4</span>
+                    <p class="text-sm text-slate-500">Final rigging, sea trials, and launch day prep.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-slate-100">
+            <h2 class="text-2xl font-bold mb-8 text-center">Join Boat Pro & Get Your Guide</h2>
+            
+            <form id="boatProForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">First Name</label>
+                        <input type="text" name="firstName" required placeholder="First Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Last Name</label>
+                        <input type="text" name="lastName" required placeholder="Last Name"
+                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                    <input type="email" name="email" required placeholder="email@address.com"
+                        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-blue-700 hover:bg-blue-800 text-white font-extrabold py-4 rounded-xl shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    SEND MY FREE GUIDE
+                </button>
+            </form>
+            
+            <div id="msg" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-center font-bold text-green-700">
+                Welcome aboard! Your dewinterization guide is on its way to your inbox.
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-slate-400 text-sm border-t border-slate-100 mt-10">
+        <p>© 2026 Boat Pro USA | Professional Yacht Delivery & Consulting</p>
+    </footer>
+
+    <script>
+        // Replace this URL with your Google Apps Script Web App URL
+        const scriptURL = '
+https://script.google.com/macros/s/AKfycbyE6D6r4debK7BOa2LPPyFSq-UgxYFr2gSwi8rn79RK934v78yDeXGDFF1hfSi-Tp4zG'; 
+        const form = document.getElementById('boatProForm');
+        const msg = document.getElementById('msg');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = "Processing Your Request...";
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.classList.remove('hidden');
+                    form.classList.add('hidden'); // Hide form on success
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    btn.disabled = false;
+                    btn.innerText = "GET THE DEWINTERIZATION GUIDE";
+                    alert("There was an error saving your info. Please try again.");
+                });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>'; 
+        const form = document.getElementById('boatProForm');
+        const msg = document.getElementById('msg');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = "Processing Your Request...";
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.classList.remove('hidden');
+                    form.classList.add('hidden'); // Hide form on success
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    btn.disabled = false;
+                    btn.innerText = "GET THE DEWINTERIZATION GUIDE";
+                    alert("There was an error saving your info. Please try again.");
+                });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>L'; 
+        const form = document.getElementById('boatProForm');
+        const msg = document.getElementById('msg');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = "Processing Your Request...";
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.classList.remove('hidden');
+                    form.classList.add('hidden'); // Hide form on success
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    btn.disabled = false;
+                    btn.innerText = "GET THE DEWINTERIZATION GUIDE";
+                    alert("There was an error saving your info. Please try again.");
+                });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
